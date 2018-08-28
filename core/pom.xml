@@ -25,6 +25,11 @@
 							<goal>shade</goal>
 						</goals>
 						<configuration>
+							<artifactSet>
+								<excludes>
+									<exclude>com.google.code.findbugs:jsr305</exclude>
+								</excludes>
+							</artifactSet>
 							<minimizeJar>true</minimizeJar>
 							<shadedArtifactAttached>true</shadedArtifactAttached>
 							<createSourcesJar>true</createSourcesJar>
